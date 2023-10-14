@@ -1,0 +1,10 @@
+.dish{
+    border: 1px solid white;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 20px;
+}
+
+.title{
+    border: 1px solid white;
+}
