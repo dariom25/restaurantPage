@@ -44,7 +44,7 @@ export function displayDishes() {
     const prices = ["19.99$$", "19.99$$", "19.99$$", "19.99$$"];
     const descriptions = [
         "Fried rice with a variety of vegetables, shrimp, and chicken, seasoned with soy sauce, ginger and garlic. Veggie options available with tofu.",
-        "Gnochchi in a creamy tomato sauce topped with grilled shrimp and spinach.",
+        "Gnocchi in a creamy tomato sauce topped with grilled shrimp and spinach.",
         "A Japanese noodle soup with a variety of vegetables, pork and a savory broth.",
         "A black bean and quinoa burger topped with avocado, sprouts and a sweet and sour, served on a toasted bun with a side of fries."
     ];
