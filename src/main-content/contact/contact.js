@@ -17,7 +17,7 @@ function createInformation(title, infos) {
 
     const informationDiv = document.createElement("div");
     informationDiv.setAttribute("class", "contact-information");
-    informationDiv.textContent = infos;
+    informationDiv.innerHTML = infos;
 
     const wrapperDiv = createWrapperDiv();
     wrapperDiv.appendChild(titleDiv);
