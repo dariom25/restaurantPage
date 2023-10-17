@@ -1,4 +1,9 @@
-import image from "./img/ramen.png"
+import ramen from "./img/ramen.png";
+import rice from "./img/rice.png";
+import burger from "./img/burger.png";
+import gnocchi from "./img/gnocchi.png";
+import tea from "./img/tea.png";
+import lemonade from "./img/lemonade.png";
 
 function dish(title, path, price, description) {
     const dishContainer = document.createElement("div");
@@ -34,19 +39,23 @@ function dish(title, path, price, description) {
 }
 
 export function displayDishes() {
-    const titles = ["Asteroid Fried Rice", "Galactic Gnocchi", "Universal Umami Ramen"];
+    const titles = ["Asteroid Fried Rice", "Galactic Gnocchi", "Universal Umami Ramen", "Voyager Veggie Burger", "Interstellar Iced Tea", "Lunar Lemonade"];
     const paths = [
-        image,
-        image,
-        image,
-        image
+        rice,
+        gnocchi,
+        ramen,
+        burger,
+        tea,
+        lemonade
     ];
-    const prices = ["19.99$$", "19.99$$", "19.99$$", "19.99$$"];
+    const prices = ["19.99$$", "19.99$$", "19.99$$", "19.99$$", "4.99$$", "3.99$$"];
     const descriptions = [
         "Fried rice with a variety of vegetables, shrimp, and chicken, seasoned with soy sauce, ginger and garlic. Veggie options available with tofu.",
         "Gnocchi in a creamy tomato sauce topped with grilled shrimp and spinach.",
         "A Japanese noodle soup with a variety of vegetables, pork and a savory broth.",
-        "A black bean and quinoa burger topped with avocado, sprouts and a sweet and sour, served on a toasted bun with a side of fries."
+        "A black bean and quinoa burger topped with avocado, sprouts and a sweet and sour, served on a toasted bun with a side of fries.",
+        "A refreshing and flavorful iced tea made with a blend of black tea, hibiscus tea and lemon verbena, served with a slice of grapefruit",
+        "A classic lemonade made with fresh lemons, sugar and warter, garnished with a sprig of mint"
     ];
     const mainContent = document.createElement("div");
     mainContent.setAttribute("id", "main-content");
