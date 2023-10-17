@@ -68,7 +68,6 @@ export function displayDishes() {
     for (let i = 0; i < titles.length; i++ ) {
         const element = dish(titles[i], paths[i], prices[i], descriptions[i]);
         mainContent.appendChild(element);
-        console.log("Test")
     }
     
     return mainContent;
