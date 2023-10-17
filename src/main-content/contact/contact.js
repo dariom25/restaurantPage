@@ -42,5 +42,10 @@ export function displayContactDetails() {
         mainContent.appendChild(element);
     }
 
+    const cosmoImg = new Image();
+    cosmoImg.src = cosmo;
+    cosmoImg.setAttribute("class", "cosmo-image")
+    mainContent.appendChild(cosmoImg);
+
     return mainContent;
 }

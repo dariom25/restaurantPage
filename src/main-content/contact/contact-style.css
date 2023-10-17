@@ -6,7 +6,7 @@
     padding: 10px;
 }
 
-.details, .information{
+.wrapper{
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -19,5 +19,10 @@
 
 .contact-information{
     font-size: 1vw;
+}
+
+.cosmo-image{
+    width: 50%;
+    border: 1px solid white;
 }
 
