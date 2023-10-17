@@ -39,7 +39,7 @@ function dish(title, path, price, description) {
 }
 
 export function displayDishes() {
-    const titles = ["Asteroid Fried Rice", "Galactic Gnocchi", "Universal Umami Ramen", "Voyager Veggie Burger", "Interstellar Iced Tea", "Lunar Lemonade"];
+    const titles = ["Asteroid Fried Rice", "Galactic Gnocchi", "Rocketry Ramen", "Voyager Veggie Burger", "Interstellar Iced Tea", "Lunar Lemonade"];
     const paths = [
         rice,
         gnocchi,
@@ -59,6 +59,11 @@ export function displayDishes() {
     ];
     const mainContent = document.createElement("div");
     mainContent.setAttribute("id", "main-content");
+
+    const menuTitle = document.createElement("div");
+    menuTitle.textContent = "Menu";
+    menuTitle.setAttribute("class", "menu");
+    mainContent.appendChild(menuTitle);
 
     for (let i = 0; i < titles.length; i++ ) {
         const element = dish(titles[i], paths[i], prices[i], descriptions[i]);
