@@ -1,0 +1,33 @@
+.review-container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.review{
+    font-size: 1vw;
+}
+
+.reviewer{
+    font-size: 1vw;
+    font-weight: 500;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hours-container, .adress-container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hours-title, .adress-title{
+    font-size: 1.3vw;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.opening-hours, .adress{
+    font-size: 0.8vw;
+}
