@@ -9,7 +9,7 @@ function sidebarTab(description) {
 export function sidebar() {
     const sidebarDiv = document.createElement("div");
     sidebarDiv.setAttribute("id", "sidebar")
-    const tabs = ["Menu", "Contact", "Opening Hours", "Reviews"];
+    const tabs = ["Home", "Menu", "Contact"];
 
     
     tabs.forEach((tab) => {
