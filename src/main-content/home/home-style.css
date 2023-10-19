@@ -16,18 +16,18 @@
     justify-content: flex-end;
 }
 
-.hours-container, .adress-container, .review-container{
+.hours-container, .address-container, .review-container{
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-.hours-title, .adress-title{
+.hours-title, .address-title{
     font-size: 1.3vw;
     font-weight: 500;
     text-decoration: underline;
 }
 
-.opening-hours, .adress{
+.opening-hours, .address{
     font-size: 0.8vw;
 }
