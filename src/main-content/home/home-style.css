@@ -1,7 +1,7 @@
 .home-container{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
 }
 
 .review{
@@ -20,14 +20,30 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
+
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.review-container{
+    grid-area: 1/span 2;
+}
+
+.hours-container{
+    grid-area: 2/1;
+}
+
+.address-container{
+    grid-area: 2/2;
 }
 
 .hours-title, .address-title{
-    font-size: 1.3vw;
+    font-size: 1.5vw;
     font-weight: 500;
     text-decoration: underline;
 }
 
 .opening-hours, .address{
-    font-size: 0.8vw;
+    font-size: 0.85vw;
 }
