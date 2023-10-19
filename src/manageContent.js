@@ -14,3 +14,10 @@ export function loadHomeContent() {
     removeContent();
     createHomeContent();
 }
+
+export function loadContactContent() {
+    const mainContentDiv = document.querySelector("#main-content");
+    removeContent();
+    displayContactDetails();
+}
+
