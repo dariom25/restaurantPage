@@ -1,7 +1,7 @@
-.review-container{
+.home-container{
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
 }
 
 .review{
@@ -16,7 +16,7 @@
     justify-content: flex-end;
 }
 
-.hours-container, .adress-container{
+.hours-container, .adress-container, .review-container{
     display: flex;
     flex-direction: column;
     gap: 5px;
