@@ -1,5 +1,5 @@
 function sidebarTab(description) {
-    const element = document.createElement("div");
+    const element = document.createElement("button");
     element.textContent = description;
     element.setAttribute("class", "tab");
 
