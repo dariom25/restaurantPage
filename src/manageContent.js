@@ -1,6 +1,7 @@
 export function removeContent() {
-    const contentDiv = document.querySelector("#content");
-    for (let i = 0; i < contentDiv.childNodes.length; i++) {
-        parent.removeChild(parent.childNodes[i]);
+    const mainContentDiv = document.querySelector("#main-content");
+    for (let i = 0; i < mainContentDiv.childNodes.length; i++) {
+        mainContentDiv.removeChild(mainContentDiv.childNodes[i]);
     }
 }
+
