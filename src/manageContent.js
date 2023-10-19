@@ -21,3 +21,8 @@ export function loadContactContent() {
     displayContactDetails();
 }
 
+export function loadMenuContent() {
+    const mainContentDiv = document.querySelector("#main-content");
+    removeContent();
+    displayDishes();
+}
