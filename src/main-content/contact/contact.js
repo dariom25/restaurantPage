@@ -33,9 +33,7 @@ export function displayContactDetails() {
         "Cosmo Culinary is a renowned chef and restaurateur who used to be passionate about creating unique and innovative dinig experiences. He has travelled all over the Solar System just to realize he likes to create simple and down to Earth (pun intended) dishes best."
         ]
     
-    //eigenes module für main-content?
-    const mainContent = document.createElement("div");
-    mainContent.setAttribute("id", "main-content");
+    const mainContent = document.querySelector("#main-content");
 
     for (let i = 0; i < titles.length; i++ ) {
         const element = createInformation(titles[i], informations[i]);

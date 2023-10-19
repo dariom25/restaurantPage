@@ -41,8 +41,7 @@ export function createHomeContent() {
     addressContainer.appendChild(address);
     homeContainer.appendChild(addressContainer);
 
-    const mainContent = document.createElement("div");
-    mainContent.setAttribute("id", "main-content");
+    const mainContent = document.querySelector("#main-content");
     mainContent.appendChild(homeContainer);
 
     return mainContent;

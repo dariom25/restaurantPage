@@ -57,8 +57,8 @@ export function displayDishes() {
         "A refreshing and flavorful iced tea made with a blend of black tea, hibiscus tea and lemon verbena, served with a slice of grapefruit",
         "A classic lemonade made with fresh lemons, sugar and warter, garnished with a sprig of mint"
     ];
-    const mainContent = document.createElement("div");
-    mainContent.setAttribute("id", "main-content");
+    const mainContent = document.querySelector("#main-content");
+
 
     const menuTitle = document.createElement("div");
     menuTitle.textContent = "Menu";
