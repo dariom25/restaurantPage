@@ -10,19 +10,16 @@ function removeContent() {
 }
 
 export function loadHomeContent() {
-    const mainContentDiv = document.querySelector("#main-content");
     removeContent();
     createHomeContent();
 }
 
 export function loadContactContent() {
-    const mainContentDiv = document.querySelector("#main-content");
     removeContent();
     displayContactDetails();
 }
 
 export function loadMenuContent() {
-    const mainContentDiv = document.querySelector("#main-content");
     removeContent();
     displayDishes();
 }
