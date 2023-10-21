@@ -2,4 +2,4 @@
 
 Project from the Odin Project
 
-Live-Demo:
+Live-Demo: https://dariom25.github.io/restaurantPage/
