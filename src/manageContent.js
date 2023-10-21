@@ -9,6 +9,10 @@ function removeContent() {
       }
 }
 
+function changeColor(color, element) {
+    element.style.backgroundColor = color;
+}
+
 function changeBtnColor(btnName) {
     const btn = document.querySelector(btnName);
     const computedStyle = getComputedStyle(btn);
@@ -16,6 +20,7 @@ function changeBtnColor(btnName) {
 
     if (btnColor === "rgb(0, 0, 0)") {
         console.log("black");
+        changeColor("white", btn);
     } else if (btnColor === "rgb(255, 255, 255)") {
         console.log("white");
     }
