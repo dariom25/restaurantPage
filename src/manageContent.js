@@ -9,9 +9,22 @@ function removeContent() {
       }
 }
 
+function changeBtnColor(btnName) {
+    const btn = document.querySelector(btnName);
+    const computedStyle = getComputedStyle(btn);
+    const btnColor = computedStyle.getPropertyValue("background-color");
+
+    if (btnColor === "rgb(0, 0, 0)") {
+        console.log("black");
+    } else if (btnColor === "rgb(255, 255, 255)") {
+        console.log("white");
+    }
+}
+
 export function loadHomeContent() {
     removeContent();
     createHomeContent();
+    changeBtnColor(".home-button")
 }
 
 export function loadContactContent() {
