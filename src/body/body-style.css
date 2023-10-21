@@ -9,6 +9,8 @@ body{
     display: flex;
     align-self: center;
 
+    background-image: url("stars.jpg");
+    background-size: contain;
     background-color: rgb(9, 9, 161);
 
     width: 80vw;
