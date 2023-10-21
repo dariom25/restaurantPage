@@ -10,6 +10,9 @@ export function createHomeContent() {
 
     //review
     const reviewContainer = createDivAndSetClass("review-container");
+    const reviewTitle = createDivAndSetClass("hours-title");
+    reviewTitle.textContent = "What our customers say:"
+    reviewContainer.appendChild(reviewTitle);
     const review = createDivAndSetClass("review");
     review.textContent = "Cosmic Culinary Creations is a truly out-of-this-world dining experience. Located on the luxurious space station, Elysium, this restaurant is owned and operated by the world-renowned chef, Cosmos Culinary. Cosmos is a master of fusion cuisine, and his dishes are a feast for the senses. I had the pleasure of dining at Cosmic Culinary Creations recently, and I was blown away by the experience. The food was delicious, the drinks were refreshing, and the service was excellent. I highly recommend this restaurant to anyone looking for a truly unique dining experience.";
     reviewContainer.appendChild(review);
