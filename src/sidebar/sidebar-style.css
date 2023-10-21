@@ -17,3 +17,8 @@
 .tab:hover{
     opacity: 0.8;
 }
+
+.home-button{
+    background-color: white;
+    color: black;
+}
