@@ -4,9 +4,9 @@ import { createHomeContent } from "./main-content/home/home.js";
 
 function removeContent() {
     const mainContentDiv = document.querySelector("#main-content");
-    for (let i = 0; i < mainContentDiv.childNodes.length; i++) {
-        mainContentDiv.removeChild(mainContentDiv.childNodes[i]);
-    }
+    while (mainContentDiv.firstChild) {
+        mainContentDiv.removeChild(mainContentDiv.firstChild);
+      }
 }
 
 export function loadHomeContent() {
