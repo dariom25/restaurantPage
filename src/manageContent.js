@@ -21,14 +21,14 @@ function changeBtnColor(btnName) {
         const computedStyle = getComputedStyle(btn);
         const btnColor = computedStyle.getPropertyValue("background-color");
 
-         if (btnColor === "rgb(255, 255, 255)") {
-            changeColor("black", "white", btn);
+         if (btnColor === "rgb(230, 230, 230)") {
+            changeColor("black", "rgb(230, 230, 230)", btn);
         }
     });
     
     //change color of specific button to white
     const btn = document.querySelector(btnName);
-    changeColor("white", "black", btn);
+    changeColor("rgb(230, 230, 230)", "black", btn);
 }
 
 export function loadHomeContent() {
