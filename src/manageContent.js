@@ -9,35 +9,44 @@ function removeContent() {
       }
 }
 
-function changeColor(color, element) {
-    element.style.backgroundColor = color;
+function changeColor(backgroundColor, fontColor, element) {
+    element.style.backgroundColor = backgroundColor;
+    element.style.color = fontColor;
 }
 
 function changeBtnColor(btnName) {
-    const btn = document.querySelector(btnName);
-    const computedStyle = getComputedStyle(btn);
-    const btnColor = computedStyle.getPropertyValue("background-color");
+    //set the color of the other buttons back to black
+    const btns = document.querySelectorAll(".tab");
+    btns.forEach((btn) => {
+        const computedStyle = getComputedStyle(btn);
+        const btnColor = computedStyle.getPropertyValue("background-color");
 
-    if (btnColor === "rgb(0, 0, 0)") {
-        console.log("black");
-        changeColor("white", btn);
-    } else if (btnColor === "rgb(255, 255, 255)") {
-        console.log("white");
-    }
+         if (btnColor === "rgb(255, 255, 255)") {
+            changeColor("black", "white", btn);
+        }
+    });
+    
+    //change color of specific button to white
+    const btn = document.querySelector(btnName);
+    changeColor("white", "black", btn);
 }
 
 export function loadHomeContent() {
     removeContent();
     createHomeContent();
-    changeBtnColor(".home-button")
+    changeBtnColor(".home-button");
 }
 
 export function loadContactContent() {
     removeContent();
     displayContactDetails();
+    changeBtnColor(".contact-button");
+
 }
 
 export function loadMenuContent() {
     removeContent();
     displayDishes();
+    changeBtnColor(".menu-button");
+
 }
