@@ -3,6 +3,10 @@
     border: 1px solid white;
     padding: 2vw 5vw;
     overflow-y:auto;
+
+    background-color: rgba(0, 0, 0, 0.6);
+    
+    border-radius: 10px;
     
     display: flex;
     flex-direction: column;
